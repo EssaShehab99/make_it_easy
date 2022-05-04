@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/edit_text.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_add.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_home.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_launcher_background.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_office_img.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_progress.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_task.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/ic_time.xml" value="0.121" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/drawable/raduis_shape.xml" value="0.193" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/activity_bottom_navigation_bar.xml" value="0.22826086956521738" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/activity_home.xml" value="0.2" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/fragment_add.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/fragment_task.xml" value="0.20512820512820512" />
+        <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.536" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
