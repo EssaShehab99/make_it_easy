@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <item
-        android:id="@+id/person"
-        android:title="Person"
-        android:icon="@drawable/ic_home"/>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item
         android:id="@+id/home"
-        android:title="Home"
-        android:icon="@drawable/ic_task"/>
+        android:title="Person"
+        android:icon="@drawable/ic_home"
+        app:showAsAction="always"/>
     <item
-        android:id="@+id/settings"
+        android:id="@+id/progress_date"
+        android:title="Home"
+        android:icon="@drawable/ic_date"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/Placeholder"
+        android:checkable="false"
+        android:enabled="false"
+        android:title="" />
+    <item
+        android:id="@+id/project"
+        android:title="Home"
+        android:icon="@drawable/ic_task"
+        app:showAsAction="always"/>
+    <item
+        android:id="@+id/account"
         android:title="Settings"
-        android:icon="@drawable/ic_progress"/>
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="always"/>
 </menu>

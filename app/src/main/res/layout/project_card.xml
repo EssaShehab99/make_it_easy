@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/card"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:layout_marginBottom="20dp">
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/radius_shape"
+        android:orientation="vertical"
+        android:padding="15dp"
+        tools:ignore="UselessParent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/radius_shape"
+            android:gravity="center"
+            android:text="Database"
+            android:theme="@style/text_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/radius_shape"
+            android:backgroundTint="@color/secondary"
+            android:gravity="center"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="5dp"
+            android:text="start"
+            android:textColor="@color/white"
+            android:theme="@style/text_style" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/determinate"
+                style="@android:style/Widget.ProgressBar.Horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:layout_centerInParent="true"
+                android:layout_marginHorizontal="10dp"
+                android:layout_toStartOf="@+id/four_button"
+                android:progress="25"
+                android:progressBackgroundTint="#82e9de"
+                android:progressTint="@color/secondary"
+                app:indicatorColor="@color/secondary" />
+
+            <TextView
+                android:id="@+id/four_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/radius_shape"
+                android:backgroundTint="@color/secondary"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+
+                android:text="start"
+                android:textColor="@color/white"
+                android:theme="@style/text_style" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

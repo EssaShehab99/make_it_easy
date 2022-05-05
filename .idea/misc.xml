@@ -21,6 +21,27 @@
         <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/fragment_home.xml" value="0.2" />
         <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/fragment_task.xml" value="0.20512820512820512" />
         <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.536" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_date.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_down_arrow.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_home.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_progress.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_settings.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_task.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/ic_time.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/drawable/radius_shape.xml" value="0.193" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_home.xml" value="0.128" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_main.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_project_details.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_account.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_add.xml" value="0.136" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_home.xml" value="0.2" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_progress.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_progress_date.xml" value="0.1" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_project.xml" value="0.1" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_task.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/project_card.xml" value="0.2" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/setting_fragment.xml" value="0.20512820512820512" />
+        <entry key="..\:/make_it_easy/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20512820512820512" />
       </map>
     </option>
   </component>
