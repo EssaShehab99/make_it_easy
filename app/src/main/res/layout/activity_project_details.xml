@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/background"
-    tools:context=".project_details">
+    tools:context=".ProjectDetails">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -43,9 +43,9 @@
                     android:theme="@style/text_style" />
 
                 <TextView
+                    android:id="@+id/project_name_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Welcome to"
                     android:textSize="30sp"
                     android:theme="@style/text_style" />
             </LinearLayout>
@@ -61,6 +61,7 @@
                 android:orientation="vertical"
                 android:layout_weight="1">
                 <com.owl93.dpb.CircularProgressView
+                    android:id="@+id/progress_bar_circle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:maxValue="100"
@@ -69,7 +70,8 @@
                     app:strokeWidth="10dp"
                     app:text="10%"
                     app:textColor="@color/primary"
-                    app:trackWidth="10dp" />
+                    app:trackWidth="10dp"
+                    android:layout_margin="10dp"/>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="20dp"

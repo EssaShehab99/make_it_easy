@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "531633841649",
+    "project_id": "makeeasy-31323",
+    "storage_bucket": "makeeasy-31323.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:531633841649:android:6947504671e246e7d91050",
+        "android_client_info": {
+          "package_name": "com.example.make_it_easy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "531633841649-c5qol2pq4mmoeu84puk6qdldnent65lj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA7G8vrpt9Y36ttjbvzmbSK0RT9ND9PKco"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "531633841649-c5qol2pq4mmoeu84puk6qdldnent65lj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -10,36 +10,48 @@
     <RelativeLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
+        android:layout_height="200dp"
         android:background="@drawable/radius_shape"
         android:orientation="vertical"
         android:padding="15dp"
+        android:layout_margin="5dp"
         tools:ignore="UselessParent">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@drawable/radius_shape"
-            android:gravity="center"
-            android:text="Database"
-            android:theme="@style/text_style" />
+            android:layout_centerHorizontal="true">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentEnd="true"
-            android:layout_marginBottom="10dp"
-            android:background="@drawable/radius_shape"
-            android:backgroundTint="@color/secondary"
-            android:gravity="center"
-            android:paddingHorizontal="20dp"
-            android:paddingVertical="5dp"
-            android:text="start"
-            android:textColor="@color/white"
-            android:theme="@style/text_style" />
+            <TextView
+                android:id="@+id/project_name_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/radius_shape"
+                android:textSize="10dp"
+                android:theme="@style/text_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/radius_shape"
+                android:backgroundTint="@color/secondary"
+                android:gravity="center"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="5dp"
+                android:text="start"
+                android:textColor="@color/white"
+                android:textSize="10dp"
+                android:theme="@style/text_style"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -47,20 +59,20 @@
             android:orientation="horizontal">
 
             <ProgressBar
-                android:id="@+id/determinate"
+                android:id="@+id/progress_Bar"
                 style="@android:style/Widget.ProgressBar.Horizontal"
                 android:layout_width="match_parent"
-                android:layout_height="10dp"
+                android:layout_height="5dp"
                 android:layout_centerInParent="true"
                 android:layout_marginHorizontal="10dp"
-                android:layout_toStartOf="@+id/four_button"
-                android:progress="25"
+                android:layout_toStartOf="@+id/days_tv"
+                android:progress="90"
                 android:progressBackgroundTint="#82e9de"
                 android:progressTint="@color/secondary"
                 app:indicatorColor="@color/secondary" />
 
             <TextView
-                android:id="@+id/four_button"
+                android:id="@+id/days_tv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentEnd="true"
@@ -71,10 +83,9 @@
                 android:gravity="center"
                 android:paddingHorizontal="20dp"
                 android:paddingVertical="5dp"
-
-                android:text="start"
                 android:textColor="@color/white"
-                android:theme="@style/text_style" />
+                android:theme="@style/text_style"
+                android:textSize="10dp"/>
         </RelativeLayout>
     </RelativeLayout>
 

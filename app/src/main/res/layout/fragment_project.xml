@@ -29,7 +29,8 @@
             android:orientation="horizontal">
 
             <TextView
-                android:layout_width="70dp"
+                android:id="@+id/all_filter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:background="@drawable/radius_shape"
@@ -39,21 +40,23 @@
                 android:theme="@style/text_style" />
 
             <TextView
-                android:layout_width="70dp"
+                android:id="@+id/week_filter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="All"
+                android:text="Week"
                 android:theme="@style/text_style" />
 
             <TextView
-                android:layout_width="70dp"
+                android:id="@+id/month_filter"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="10dp"
                 android:gravity="center"
                 android:padding="10dp"
-                android:text="All"
+                android:text="Month"
                 android:theme="@style/text_style" />
         </LinearLayout>
 
