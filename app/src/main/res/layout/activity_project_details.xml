@@ -49,6 +49,12 @@
                     android:layout_height="wrap_content"
                     android:textSize="30sp"
                     android:theme="@style/text_style" />
+                <TextView
+                    android:id="@+id/project_date_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30sp"
+                    android:theme="@style/text_style" />
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
@@ -149,7 +155,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
-                    android:layout_marginTop="20dp">
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone">
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"

@@ -58,11 +58,11 @@ public class ProjectsAdapter extends RecyclerView.Adapter<ProjectsAdapter.MyView
 
         void setDaysTV(Date value) {
 
-          daysTV.setText(String.valueOf(((new Date(System.currentTimeMillis())).getDate()-value.getDate())));
+          daysTV.setText(String.valueOf(value.getDate()-((new Date(System.currentTimeMillis())).getDate())));
         }
 
-        void setProgressBar(int value) {
-            progressBar.setProgress(value);
+        void setProgressBar(float value) {
+            progressBar.setProgress(Math.round(value));
         }
     }
 

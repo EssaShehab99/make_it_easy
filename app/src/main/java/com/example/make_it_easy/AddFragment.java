@@ -31,6 +31,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.List;
 import java.util.Locale;
 
@@ -103,7 +104,7 @@ public class AddFragment extends Fragment {
                 @SuppressLint("SimpleDateFormat") DateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
                 try {
                     FirebaseFirestore db = FirebaseFirestore.getInstance();
-                    Project project = new Project("", projectName.getText().toString(), 0, formatter.parse(projectDeadline.getText().toString()), "", stepList);
+                    Project project = new Project("", projectName.getText().toString(), 0, formatter.parse(projectDeadline.getText().toString()),new Date(System.currentTimeMillis()), "", stepList);
                     db.collection("users").document(UserPDO.user.email).collection("projects")
                             .add(project.toMap())
                             .addOnSuccessListener(aVoid -> {

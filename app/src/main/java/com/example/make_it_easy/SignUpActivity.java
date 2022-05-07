@@ -12,23 +12,22 @@ import android.widget.EditText;
 import com.example.make_it_easy.models.User;
 import com.example.make_it_easy.pdo.UserPDO;
 import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 
-public class MainActivity extends AppCompatActivity {
+public class SignUpActivity extends AppCompatActivity {
     EditText firstName, lastName, email, password;
     FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_sign_up);
         firstName = findViewById(R.id.first_name_et);
         lastName = findViewById(R.id.last_name_et);
         email = findViewById(R.id.email_et);
         password = findViewById(R.id.password_et);
         findViewById(R.id.have_account).setOnClickListener(v -> {
-            startActivity(new Intent(this, SignInActivity.class));
+           finish();
         });
         findViewById(R.id.create_btn).setOnClickListener(v -> {
             if (TextUtils.isEmpty(firstName.getText()))
@@ -55,8 +54,8 @@ public class MainActivity extends AppCompatActivity {
                 .set(UserPDO.user.toMap())
                 .addOnSuccessListener(aVoid -> {
 //                    UserPDO.user.id=aVoid;
-                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
-                    Log.d("TAG", "Success writing document");
+                    startActivity(new Intent(SignUpActivity.this, HomeActivity.class));
+                    finish();
                 })
                 .addOnFailureListener(new OnFailureListener() {
                     @Override

@@ -50,6 +50,7 @@
                     android:theme="@style/text_style" />
 
                 <Button
+                    android:id="@+id/test"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
@@ -97,11 +98,12 @@
                     android:orientation="horizontal">
 
                     <Button
+                        android:id="@+id/task_btn"
                         android:layout_width="80dp"
                         android:layout_height="40dp"
                         android:layout_margin="5dp"
                         android:background="@drawable/circle_shape"
-                        android:text="3/5"
+                        android:text="0/0"
                         android:textSize="15dp"
                         android:theme="@style/text_style"
                         app:backgroundTint="@color/secondary" />
@@ -117,10 +119,11 @@
                 </LinearLayout>
 
                 <TextView
+                    android:id="@+id/how_many_done_tv"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:gravity="start"
-                    android:text="You marked 3/5 tasks are done!"
+                    android:text="You marked 0/0 tasks are done!"
                     android:textColor="@color/secondary"
                     android:theme="@style/text_style" />
 
@@ -144,15 +147,17 @@
                 android:orientation="vertical">
 
                 <com.owl93.dpb.CircularProgressView
+                    android:id="@+id/progress_bar_circle"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     app:maxValue="100"
                     app:progress="90"
                     app:strokeColor="@color/primary"
                     app:strokeWidth="10dp"
-                    app:text="10%"
+                    app:text="0%"
                     app:textColor="@color/primary"
-                    app:trackWidth="10dp" />
+                    app:trackWidth="10dp"
+                    app:textSize="25sp"/>
 
                 <LinearLayout
                     android:layout_width="wrap_content"

@@ -2,6 +2,7 @@ package com.example.make_it_easy;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.widget.TextView;
@@ -12,26 +13,32 @@ import com.example.make_it_easy.pdo.UserPDO;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.owl93.dpb.CircularProgressView;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.concurrent.atomic.AtomicReference;
 
 public class ProjectDetails extends AppCompatActivity {
 
     FirebaseFirestore db = FirebaseFirestore.getInstance();
-    TextView stepOne;
-    TextView stepTwo;
-    TextView stepThree;
-    TextView stepFour;
+    TextView stepOne,stepTwo,stepThree,stepFour,projectName,projectDate;
     CircularProgressView progressBar;
     Project project;
+    float progressValue = 0;
+    @SuppressLint("SimpleDateFormat")
+    DateFormat formatter = new SimpleDateFormat("yyyy-MM-dd");
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_project_details);
-         project = project(getIntent().getStringExtra("id"));
-        TextView projectName = findViewById(R.id.project_name_tv);
-         progressBar = findViewById(R.id.progress_bar_circle);
+        project = project(getIntent().getStringExtra("id"));
+        progressValue=100/((float)project.steps.size());
+        projectName = findViewById(R.id.project_name_tv);
+        projectDate = findViewById(R.id.project_date_tv);
+        progressBar = findViewById(R.id.progress_bar_circle);
         projectName.setText(project.name);
-updateProgressBar();
+        projectDate.setText(formatter.format(project.date));
+        updateProgressBar();
         stepOne = findViewById(R.id.step_1);
         stepTwo = findViewById(R.id.step_2);
         stepThree = findViewById(R.id.step_3);
@@ -73,10 +80,10 @@ updateProgressBar();
             project.steps.get(0).status = !project.steps.get(0).status;
             if (project.steps.get(0).status) {
                 stepOne.setPaintFlags(stepOne.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                project.progress += 25;
+                project.progress += progressValue;
             } else {
                 stepOne.setPaintFlags(0);
-                project.progress -= 25;
+                project.progress -= progressValue;
             }
             updateProgressBar();
 
@@ -86,11 +93,11 @@ updateProgressBar();
             project.steps.get(1).status = !project.steps.get(1).status;
             if (project.steps.get(1).status) {
                 stepTwo.setPaintFlags(stepTwo.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                project.progress += 25;
+                project.progress += progressValue;
 
             } else {
                 stepTwo.setPaintFlags(0);
-                project.progress -= 25;
+                project.progress -= progressValue;
 
             }
             updateProgressBar();
@@ -101,11 +108,11 @@ updateProgressBar();
             project.steps.get(2).status = !project.steps.get(2).status;
             if (project.steps.get(2).status) {
                 stepThree.setPaintFlags(stepThree.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                project.progress += 25;
+                project.progress += progressValue;
 
             } else {
                 stepThree.setPaintFlags(0);
-                project.progress -= 25;
+                project.progress -= progressValue;
 
             }
             updateProgressBar();
@@ -117,10 +124,10 @@ updateProgressBar();
 
             if (project.steps.get(3).status) {
                 stepFour.setPaintFlags(stepFour.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
-                project.progress += 25;
+                project.progress += progressValue;
             } else {
                 stepFour.setPaintFlags(0);
-                project.progress -= 25;
+                project.progress -= progressValue;
             }
             updateProgressBar();
 
@@ -139,8 +146,9 @@ updateProgressBar();
         });
         return project.get();
     }
-    void updateProgressBar(){
+
+    void updateProgressBar() {
         progressBar.setProgress(project.progress);
-        progressBar.setText(project.progress + "%");
+        progressBar.setText(Math.round(project.progress) + "%");
     }
 }

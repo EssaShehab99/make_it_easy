@@ -10,7 +10,9 @@
         <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_sign_in.xml" value="0.22826086956521738" />
         <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_account.xml" value="0.22826086956521738" />
         <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_add.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_home.xml" value="0.264" />
         <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_project.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/project_card.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

@@ -39,6 +39,7 @@ public class SignInActivity extends AppCompatActivity {
                                 if (String.valueOf(Objects.requireNonNull(document.getData()).get("password")).equals(password.getText().toString())) {
                                     UserPDO.user = new User().fromMap(document.getData(), document.getId());
                                     startActivity(new Intent(this, HomeActivity.class));
+                                    finish();
                                 } else {
                                     Shared.showSnackBar(findViewById(android.R.id.content), "User name or password not correct");
                                 }
@@ -55,7 +56,7 @@ public class SignInActivity extends AppCompatActivity {
             }
         });
         findViewById(R.id.not_have_account).setOnClickListener(v -> {
-            finish();
+            startActivity(new Intent(this, SignUpActivity.class));
         });
 
     }
