@@ -1,21 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".MainActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:paddingHorizontal="20dp">
+
         <RelativeLayout
             android:layout_width="250dp"
             android:layout_height="250dp"
-            android:layout_margin="30dp"
             android:layout_gravity="center"
+            android:layout_margin="30dp"
             android:background="@drawable/ic_office_img" />
 
         <TextView
@@ -45,8 +47,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/first_name_tv"
                 android:autofillHints=""
-                android:inputType="textPersonName"
                 android:background="@drawable/circle_shape"
+                android:inputType="textPersonName"
                 android:isScrollContainer="true"
                 android:overScrollMode="always"
                 android:paddingHorizontal="10dp" />
@@ -69,11 +71,11 @@
                 android:id="@+id/last_name_et"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:inputType="textPersonName"
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/last_name_tv"
                 android:autofillHints=""
                 android:background="@drawable/circle_shape"
+                android:inputType="textPersonName"
                 android:paddingHorizontal="10dp" />
         </RelativeLayout>
 
@@ -97,8 +99,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/email_tv"
                 android:autofillHints=""
-                android:inputType="textEmailAddress"
                 android:background="@drawable/circle_shape"
+                android:inputType="textEmailAddress"
                 android:paddingHorizontal="10dp" />
         </RelativeLayout>
 
@@ -122,8 +124,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/pass_tv"
                 android:autofillHints=""
-                android:inputType="textPassword"
                 android:background="@drawable/circle_shape"
+                android:inputType="textPassword"
                 android:paddingHorizontal="10dp" />
         </RelativeLayout>
 
@@ -142,15 +144,15 @@
                 android:text="create"
                 app:backgroundTint="@color/secondary" />
         </LinearLayout>
+
         <TextView
             android:id="@+id/have_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
             android:text="have Account? Sign In"
-            android:theme="@style/text_style"
-            android:layout_marginTop="10dp"/>
+            android:theme="@style/text_style" />
     </LinearLayout>
-
 
 
 </ScrollView>

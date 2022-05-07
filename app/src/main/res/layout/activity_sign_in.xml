@@ -6,6 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fillViewport="true"
     tools:context=".SignInActivity">
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,8 +46,8 @@
                 android:layout_marginHorizontal="10dp"
                 android:layout_toEndOf="@+id/email_tv"
                 android:autofillHints=""
-                android:inputType="textEmailAddress"
                 android:background="@drawable/circle_shape"
+                android:inputType="textEmailAddress"
                 android:paddingHorizontal="10dp" />
         </RelativeLayout>
 

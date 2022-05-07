@@ -64,13 +64,15 @@
                     android:theme="@style/text_style" />
 
                 <EditText
+                    android:id="@+id/name_et"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_toEndOf="@+id/name_tv"
                     android:autofillHints=""
                     android:background="@drawable/circle_shape"
-                    android:enabled="false" />
+                    android:enabled="false"
+                    android:paddingHorizontal="10dp"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -87,13 +89,15 @@
                     android:theme="@style/text_style" />
 
                 <EditText
+                    android:id="@+id/email_et"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_marginHorizontal="10dp"
                     android:layout_toEndOf="@+id/email_tv"
                     android:autofillHints=""
                     android:background="@drawable/circle_shape"
-                    android:enabled="false" />
+                    android:enabled="false"
+                    android:paddingHorizontal="10dp" />
             </RelativeLayout>
         </LinearLayout>
 

@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.widget.EditText;
 
@@ -15,10 +16,8 @@ import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 
 public class MainActivity extends AppCompatActivity {
-    EditText firstName;
-    EditText lastName;
-    EditText email;
-    EditText password;
+    EditText firstName, lastName, email, password;
+    FirebaseFirestore db = FirebaseFirestore.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,17 +31,28 @@ public class MainActivity extends AppCompatActivity {
             startActivity(new Intent(this, SignInActivity.class));
         });
         findViewById(R.id.create_btn).setOnClickListener(v -> {
-            UserPDO.user = new User("", firstName.getText().toString() + " " + lastName.getText().toString(), email.getText().toString(), password.getText().toString(), R.drawable.ic_profile_1, R.color.color_1);
-            signUp();
+            if (TextUtils.isEmpty(firstName.getText()))
+                firstName.setError("Enter Value");
+
+            else if (TextUtils.isEmpty(lastName.getText()))
+                lastName.setError("Enter Value");
+
+            else if (TextUtils.isEmpty(email.getText()))
+                email.setError("Enter Value");
+
+            else if (TextUtils.isEmpty(password.getText()))
+                password.setError("Enter Value");
+            else {
+                UserPDO.user = new User("", firstName.getText().toString() + " " + lastName.getText().toString(), email.getText().toString(), password.getText().toString(), R.drawable.ic_profile_1, R.color.color_1);
+                signUp();
+            }
+
         });
     }
 
     public void signUp() {
-        FirebaseFirestore db = FirebaseFirestore.getInstance();
-
-
-        db.collection("users")
-                .add(UserPDO.user.toMap())
+        db.collection("users").document(email.getText().toString())
+                .set(UserPDO.user.toMap())
                 .addOnSuccessListener(aVoid -> {
 //                    UserPDO.user.id=aVoid;
                     startActivity(new Intent(MainActivity.this, HomeActivity.class));

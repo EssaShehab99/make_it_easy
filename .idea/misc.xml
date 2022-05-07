@@ -5,6 +5,12 @@
       <map>
         <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/activity_main.xml" value="0.1539855072463768" />
         <entry key="..\:/Users/EssaShehab99/AndroidStudioProjects/make_it_easy/app/src/main/res/layout/activity_project_details.xml" value="0.12" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_main.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_project_details.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/activity_sign_in.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_account.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_add.xml" value="0.22826086956521738" />
+        <entry key="..\:/make_it_easy/app/src/main/res/layout/fragment_project.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

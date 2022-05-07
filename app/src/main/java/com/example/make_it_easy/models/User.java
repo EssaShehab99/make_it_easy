@@ -21,6 +21,10 @@ public class User {
         this.color = color;
     }
 
+    public User() {
+
+    }
+
     public User fromMap(Map<String, Object> map, String id) {
         return new User(
                 id,
@@ -36,6 +40,7 @@ public class User {
         return new HashMap<String, Object>() {{
             put("name", name);
             put("email", email);
+            put("password", password);
             put("image", image);
             put("color", color);
         }};

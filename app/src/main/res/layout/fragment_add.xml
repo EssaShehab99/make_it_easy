@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +8,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <LinearLayout
@@ -44,12 +44,15 @@
                     android:theme="@style/text_style" />
 
                 <EditText
+                    android:id="@+id/project_name_et"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
                     android:layout_centerVertical="true"
                     android:layout_marginHorizontal="10dp"
                     android:layout_toEndOf="@+id/project_name_tv"
                     android:autofillHints=""
+                    android:isScrollContainer="true"
+                    android:overScrollMode="always"
                     android:background="@drawable/circle_shape"
                     android:paddingHorizontal="10dp" />
             </RelativeLayout>
@@ -70,15 +73,16 @@
                     android:theme="@style/text_style" />
 
                 <EditText
+                    android:id="@+id/project_deadline_et"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_centerVertical="true"
                     android:layout_marginHorizontal="10dp"
                     android:layout_toEndOf="@+id/deadline_tv"
                     android:autofillHints=""
-                    android:layout_centerVertical="true"
                     android:background="@drawable/circle_shape"
                     android:drawableEnd="@drawable/ic_date"
-                    android:enabled="false"
+                    android:focusable="false"
                     android:paddingHorizontal="10dp" />
             </RelativeLayout>
 
@@ -98,16 +102,19 @@
                     android:theme="@style/text_style" />
 
                 <EditText
+                    android:id="@+id/project_attached_et"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_centerVertical="true"
                     android:layout_marginHorizontal="10dp"
                     android:layout_toEndOf="@+id/attached_file_tv"
-                    android:autofillHints=""                    android:layout_centerVertical="true"
+                    android:autofillHints=""
                     android:background="@drawable/circle_shape"
                     android:drawableEnd="@drawable/ic_down_arrow"
                     android:enabled="false"
                     android:inputType="text"
-                    android:paddingHorizontal="10dp" />
+                    android:paddingHorizontal="10dp"
+                    android:focusable="false"/>
             </RelativeLayout>
         </LinearLayout>
 
@@ -148,6 +155,7 @@
                         android:theme="@style/text_style" />
 
                     <EditText
+                        android:id="@+id/step_one_et"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_centerVertical="true"
@@ -159,11 +167,13 @@
                         android:paddingHorizontal="10dp" />
                 </RelativeLayout>
                 <RelativeLayout
+                    android:id="@+id/container_two"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
                     android:orientation="horizontal"
-                    android:layout_weight="1">
+                    android:layout_weight="1"
+                    android:visibility="gone" >
 
                     <TextView
                         android:id="@+id/step_two_tv"
@@ -174,15 +184,16 @@
                         android:theme="@style/text_style" />
 
                     <EditText
+                        android:id="@+id/step_two_et"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
+                        android:layout_centerVertical="true"
                         android:layout_marginHorizontal="10dp"
                         android:layout_toEndOf="@+id/step_two_tv"
                         android:autofillHints=""
-                        android:layout_centerVertical="true"
                         android:background="@drawable/circle_shape"
                         android:inputType="text"
-                        android:paddingHorizontal="10dp" />
+                        android:paddingHorizontal="10dp"/>
                 </RelativeLayout>
                 <RelativeLayout
                     android:id="@+id/container_three"
@@ -202,6 +213,7 @@
                         android:theme="@style/text_style" />
 
                     <EditText
+                        android:id="@+id/step_three_et"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_centerVertical="true"
@@ -230,6 +242,7 @@
                         android:theme="@style/text_style" />
 
                     <EditText
+                        android:id="@+id/step_four_et"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"
                         android:layout_marginHorizontal="10dp"
@@ -260,25 +273,27 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="3">
+
                 <Button
+                    android:id="@+id/create_project_btn"
                     android:layout_width="wrap_content"
                     android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
                     android:layout_gravity="end"
                     android:background="@drawable/radius_shape"
-                    app:backgroundTint="@color/secondary"
                     android:text="create project"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"/>
+                    app:backgroundTint="@color/secondary" />
 
             </RelativeLayout>
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:gravity="end">
+            android:gravity="end"/>
 
-        </LinearLayout>
     </LinearLayout>
 
-</FrameLayout>
+</ScrollView>
